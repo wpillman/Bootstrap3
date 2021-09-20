@@ -1,0 +1,68 @@
+
+
+<!doctype html>
+
+
+<html><head>
+    <style>
+        
+    </style>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script><style type="text/css">.as-console-wrapper { position: fixed; bottom: 0; left: 0; right: 0; max-height: 150px; overflow-y: scroll; overflow-x: hidden; border-top: 1px solid #000; display: none; }
+.as-console { background: #e9e9e9; border: 1px solid #ccc; display: table; width: 100%; border-collapse: collapse; }
+.as-console-row { display: table-row; font-family: monospace; font-size: 13px; }
+.as-console-row:after { display: table-cell; padding: 3px 6px; color: rgba(0,0,0,.35); border: 1px solid #ccc; content: attr(data-date); vertical-align: top; }
+.as-console-row + .as-console-row > * { border: 1px solid #ccc; }
+.as-console-row-code { width: 100%; white-space: pre-wrap; padding: 3px 5px; display: table-cell; font-family: monospace; font-size: 13px; vertical-align: middle; }
+.as-console-error:before { content: 'Error: '; color: #f00; }
+.as-console-assert:before { content: 'Assertion failed: '; color: #f00; }
+.as-console-info:before { content: 'Info: '; color: #00f; }
+.as-console-warning:before { content: 'Warning: '; color: #e90 }
+@-webkit-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+@-moz-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+@-ms-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+@keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+.as-console-row-code, .as-console-row:after { -webkit-animation: flash 1s; -moz-animation: flash 1s; -ms-animation: flash 1s; animation: flash 1s; }</style>
+</head>
+<body class="modal-open" style="padding-right: 16px;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+
+<div class="modal show bv-form" id="nuevoUsu" tabindex="-1" role="dialog" aria-labellebdy="myModalLabel" novalidate="novalidate" style="padding-right: 16px; display: block;"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;" disabled="disabled"></button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4>Nuevo Contacto</h4>                       
+                </div>
+                <div class="modal-body">
+                   <form action="insertar.php" method="GET">                    
+                        <div class="form-group has-error">
+                            <label for="nombre">Nombre:</label>
+                            <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre" data-bv-field="nombre">
+                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="nombre" data-bv-result="INVALID" style="">El nombre es obligatorio</small></div>
+                        <div class="form-group has-error">
+                            <label for="edad">Edad:</label>
+                            <input class="form-control" id="edad" name="edad" type="text" placeholder="Edad" data-bv-field="edad">
+                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="edad" data-bv-result="INVALID" style="">La edad es obligatoria</small><small class="help-block" data-bv-validator="integer" data-bv-for="edad" data-bv-result="VALID" style="display: none;">Debe introducir un valor entero</small></div>
+                        <div class="form-group has-error">
+                            <label for="direccion">Direccion:</label>
+                            <input class="form-control" id="direccion" name="direccion" type="text" placeholder="Direccion" data-bv-field="direccion">
+                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="direccion" data-bv-result="INVALID" style="">La dirección es obligatoria</small></div>
+
+                        <input type="submit" class="btn btn-success" value="Salvar" disabled="disabled">
+                   </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app2.js"></script>
+ 
+
+<div class="as-console-wrapper"><div class="as-console"></div></div><div class="modal-backdrop show"></div></body></html>
